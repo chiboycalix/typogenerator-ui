@@ -7,7 +7,8 @@ body {
     box-sizing: border-box;
     font-size: 10px;
     background: #F5F8FB;
-    font-family: 'McLaren', cursive;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'McLaren', cursive; */
     /* font-family: 'ZCOOL XiaoWei', serif; */
     /* font-family: 'Lakki Reddy', cursive; */
     /* font-family: 'Boogaloo', cursive; */
@@ -25,8 +26,11 @@ h1 {
 
 
 .sidebar {
-    width: 21.3rem;
-    height: 45.5rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 14rem;
+    height:100vh;
     background: white;
     -webkit-box-shadow: 12px 1px 35px -25px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 12px 1px 35px -25px rgba(0, 0, 0, 0.51);
@@ -61,6 +65,7 @@ h1 {
     text-align: left;
     width: 100%;
     padding: 1rem;
+    font-size: .8rem;
 }
 .sidebar-menu ul li:nth-child(1) {
     border-left: 2px solid #4FCDF5;
@@ -73,6 +78,8 @@ h1 {
 }
 .sidebar-menu ul li:not(:nth-child(1)){
     margin-left: .5rem;
+    color:#575860;
+    font-weight: bold;
 }
 .sidebar-menu ul li:not(:nth-child(1)) i{
     color:#90A3B5;
@@ -102,7 +109,10 @@ h1 {
 .sidebar-settings ul li {
     text-align: left;
     width: 100%;
+    font-size: .8rem;
     padding: 1rem;
+    color:#575860;
+    font-weight: bold;
 }
 .sidebar-settings ul li i {
     margin-right: .7rem;
@@ -115,14 +125,19 @@ h1 {
     color: #5F5F68;
 }
 
-
 .content {
     width: 100rem;
-    margin-left: 0.2rem;
+    margin-left: 14.1rem;
+    margin-top: 4rem;
 }
 
 .header-container {
+    position: fixed;
+    top:0;
+    left: 14.1rem;
+    width: 66rem;
     display: flex;
+    z-index: 1;
     justify-content: space-between;
     height: 3rem;
     background: white;
@@ -145,6 +160,7 @@ h1 {
 
 .header-container-left h2 {
     color: #4F5059;
+    margin-top: -.2rem;
     user-select: none;
 }
 
@@ -162,6 +178,7 @@ h1 {
 }
 
 .header-container-right h3 {
+    margin-top: -1rem;
     color: #6A6B73;
 }
 
@@ -179,6 +196,9 @@ h1 {
 }
 .main{
     padding: 1rem;
+    margin-bottom: 4rem;
+    /* max-height: 500px; */
+
 }
 .main-content{
     display: flex;
@@ -282,6 +302,13 @@ h1 {
    border-radius: 50%;
    background: white;
 }
+
+
+.checkbox-btn-container{
+    margin: 1rem;
+}
+
+
 .font-style-wrapper{
     padding: 1rem;
     
@@ -290,6 +317,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
+    margin-top: 1rem;
 }
 .font-style-left{
     display: flex;
@@ -320,16 +348,17 @@ h1 {
     text-transform: uppercase;
 }
 
-
-
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
     height: 3rem;
     background: #FDFDFF;
-    position: relative;
-    bottom: -11.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 14.1rem;
+    width: 66rem;
     color: #CBD3DE;
+    
 }
 .footer-wrapper p, h3{
     font-size: .8rem;
