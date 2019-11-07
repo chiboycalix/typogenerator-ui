@@ -235,14 +235,25 @@ h1 {
     justify-content: space-between;
     padding: 1rem;
 }
+
 .main-content-left-fonts h2{
     color: #B6B7BA;
+    margin-top: .48rem;
+    display: inline-block;
 }
 .main-content-left-fonts i{
     color: #4FCDF5;
-    font-size: 1rem;
-    margin-top: .1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.1rem;
+    transform: translateY(0.3rem);
+    -webkit-transform: translateY(0.3rem);
+    -moz-transform: translateY(0.3rem);
+    -ms-transform: translateY(0.3rem);
+    -o-transform: translateY(0.3rem);
 }
+
 .main-content-left-radio-button{
     position: relative;
     display: flex;
@@ -270,8 +281,8 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background: #E8ECF0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -295,10 +306,10 @@ h1 {
     display: block;
 }
 .radio-container .radio-btn:after {
-   top: 9px;
-   left: 9px;
-   width: 8px;
-   height: 8px;
+   top: 4.7px;
+   left: 4.7px;
+   width: 6px;
+   height: 6px;
    border-radius: 50%;
    background: white;
 }
@@ -307,7 +318,9 @@ h1 {
 .checkbox-btn-container{
     margin: 1rem;
 }
-
+.checkbox-btn-container input{
+    margin-right: .5rem;
+}
 
 .font-style-wrapper{
     padding: 1rem;
@@ -331,6 +344,16 @@ h1 {
 .font-style-footer-para{
     text-align: right;
     margin-right: 1.1rem;
+}
+.font-style-footer-para p{
+    display: inline-block;
+    font-size: .9rem;
+    color: #B6B7BA;
+}
+.font-style-footer-para i{
+    display: inline-block;
+    font-size: .9rem;
+    cursor: pointer;
 }
 .font-style-footer-button{
     margin-top: .5rem;
