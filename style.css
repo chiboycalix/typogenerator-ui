@@ -30,7 +30,7 @@ h1 {
     top:0;
     left: 0;
     width: 14rem;
-    height:100vh;
+    height:100%;
     background: white;
     -webkit-box-shadow: 12px 1px 35px -25px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 12px 1px 35px -25px rgba(0, 0, 0, 0.51);
@@ -66,6 +66,7 @@ h1 {
     width: 100%;
     padding: 1rem;
     font-size: .8rem;
+    cursor: pointer;
 }
 .sidebar-menu ul li:nth-child(1) {
     border-left: 2px solid #4FCDF5;
@@ -75,6 +76,7 @@ h1 {
 }
 .sidebar-menu ul li:nth-child(1) i {
     color: #4FCDF5;
+    cursor: pointer;
 }
 .sidebar-menu ul li:not(:nth-child(1)){
     margin-left: .5rem;
@@ -93,7 +95,6 @@ h1 {
     text-decoration: none;
     margin-top: .5rem;
     color: #5F5F68;
-
 }
 .sidebar-settings{
     margin-top: 4rem;
@@ -135,10 +136,10 @@ h1 {
     position: fixed;
     top:0;
     left: 14.1rem;
-    width: 66rem;
+    width: 100%;
     display: flex;
-    z-index: 1;
     justify-content: space-between;
+    z-index: 1;
     height: 3rem;
     background: white;
     -webkit-box-shadow: 12px 1px 35px -25px rgba(0, 0, 0, 0.51);
@@ -166,7 +167,7 @@ h1 {
 
 .header-container-right {
     padding: 0 2rem;
-    margin: 1rem;
+    margin: 1rem 15rem;
     display: flex;
 }
 
@@ -498,12 +499,51 @@ h1 {
     position: fixed;
     bottom: 0;
     left: 14.1rem;
-    width: 66rem;
+    width: 100%;
     color: #CBD3DE;
     
+}
+.footer-wrapper-right {
+    margin: 0 15rem;
 }
 .footer-wrapper p, h3{
     font-size: .8rem;
     padding: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 100rem;
+        margin-left: 3rem;
+        margin-top: 4rem;
+    }
+    .header-container {
+        left: 3rem;
+    }
+    .header-container-right {
+        padding: 0 2rem;
+        margin: 1rem 3rem;
+        display: flex;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+       justify-content: space-evenly;
+    }
+    .sidebar{
+        width: 3.5rem;
+    }
+    .sidebar ul li a, h1{
+        display: none;
+    }
+    .sidebar-menu ul li {
+        text-align: left;
+        width: 50%;
+    }
+    .footer-wrapper{
+        left: 3rem;
+    }
+    .footer-wrapper-right {
+        margin: 0 10rem;
+    } 
+  }
